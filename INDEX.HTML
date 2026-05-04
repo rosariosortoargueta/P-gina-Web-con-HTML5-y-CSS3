@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Ocupaciones - INSO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Explorador de Ocupaciones</h1>
+        <p>Descubre diferentes trayectorias profesionales para tu futuro</p>
+    </header>
+
+    <nav>
+        <a href="#occupations">Ocupaciones</a>
+        <a href="#form-section">Formulario de Interés</a>
+        <a href="#contact-section">Contacto</a>
+    </nav>
+
+    <main class="main-content">
+
+        <section id="occupations" class="section-container">
+            <h2 class="section-title">Explora las Carreras</h2>
+            <div class="occupations-grid">
+
+                <div class="card" id="doctor">
+                    <h3>Doctor(a)</h3>
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" alt="Médico en clínica">
+                    <p>Profesional dedicado a diagnosticar, tratar y prevenir enfermedades para mantener la salud y el bienestar de las personas. Involucra interacción constante con pacientes y vocación de servicio.</p>
+                </div>
+
+                <div class="card" id="engineer">
+                    <h3>Ingeniero Civil</h3>
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" alt="Ingeniero Civil revisando planos">
+                    <p>Especialista que diseña, planifica y supervisa la construcción de infraestructuras como edificios, puentes y carreteras. La seguridad y la integridad estructural son lo principal en sus proyectos.</p>
+                </div>
+
+                <div class="card" id="teacher">
+                    <h3>Profesora Rosario</h3>
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" alt="Profesora interactuando con estudiantes">
+                    <p>Una educadora excepcional y pilar fundamental en el <strong>Instituto Nacional de Osicala (INSO)</strong>. La profe Rosario se dedica a transmitir conocimientos, guiar el aprendizaje y fomentar el desarrollo personal de los jóvenes de nuestra comunidad.</p>
+                </div>
+
+                <div class="card" id="artist">
+                    <h3>Artista Visual</h3>
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" alt="Artista pintando">
+                    <p>Un creador que utiliza su talento y diversas técnicas para expresar emociones, ideas y visiones a través del arte. Producen obras para exposiciones, uso comercial y colecciones.</p>
+                </div>
+
+                <div class="card" id="developer">
+                    <h3>Desarrollador de Software</h3>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" alt="Espacio de trabajo de un desarrollador">
+                    <p>Profesional tecnológico que crea, prueba y mantiene aplicaciones y sistemas de software para resolver problemas cotidianos utilizando diversos lenguajes de programación.</p>
+                </div>
+
+                <div class="card" id="chef">
+                    <h3>Chef Ejecutivo</h3>
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" alt="Chef preparando comida">
+                    <p>Experto culinario que dirige al personal de cocina, diseña menús y garantiza la más alta calidad en la preparación de los alimentos, gestionando inventarios y normas de seguridad.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="form-section" class="section-container">
+            <h2 class="section-title">Formulario de Interés Vocacional</h2>
+            <p class="section-subtitle">Cuéntanos qué ocupación te llama más la atención.</p>
+            <form>
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required>
+
+                <label for="occupation">Ocupación de interés:</label>
+                <select id="occupation" name="occupation">
+                    <option value="doctor">Doctor(a)</option>
+                    <option value="engineer">Ingeniería Civil</option>
+                    <option value="teacher">Docencia (Como la Profe Rosario)</option>
+                    <option value="artist">Artes Visuales</option>
+                    <option value="developer">Desarrollo de Software</option>
+                    <option value="chef">Gastronomía / Chef</option>
+                </select>
+
+                <label for="message">Mensaje o dudas:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tus dudas aquí..."></textarea>
+
+                <button type="submit">Enviar Información</button>
+            </form>
+        </section>
+
+        <section id="contact-section" class="section-container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">¿Tienes preguntas? Acércate a nuestra institución.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span class="icon">&#128205;</span>
+                    <p>Instituto Nacional de Osicala (INSO), Morazán, El Salvador</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">&#128222;</span>
+                    <p>+503 2600-0000</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">&#9993;</span>
+                    <p>info@inso-osicala.edu.sv</p>
+                </div>
+            </div>
+            <div class="map-placeholder">
+                <h3>Nuestra Ubicación</h3>
+                <p>[Aquí iría incrustado el mapa de Google Maps de Osicala, Morazán]</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
